@@ -1,0 +1,22 @@
+Column,Type,Role,Action,Reason
+customerID,Categorical/Text,Identifier,Remove,Identifier only; does not provide useful predictive information.
+gender,Categorical,Feature,Keep,Customer demographic information that may contain predictive patterns.
+SeniorCitizen,Numerical/Binary,Feature,Keep,Represents whether the customer is a senior citizen and may relate to churn.
+Partner,Categorical,Feature,Keep,Relationship status may be associated with customer retention.
+Dependents,Categorical,Feature,Keep,Dependent status may be related to customer behavior and churn.
+tenure,Numerical,Feature,Keep,Represents how long the customer has stayed with the company.
+PhoneService,Categorical,Feature,Keep,Indicates whether the customer subscribes to phone service.
+MultipleLines,Categorical,Feature,Keep,Describes the customer's phone-line subscription.
+InternetService,Categorical,Feature,Keep,Internet service type may be strongly associated with churn.
+OnlineSecurity,Categorical,Feature,Keep,Indicates whether the customer has online security service.
+OnlineBackup,Categorical,Feature,Keep,Indicates whether the customer has online backup service.
+DeviceProtection,Categorical,Feature,Keep,Indicates whether the customer has device protection.
+TechSupport,Categorical,Feature,Keep,Indicates whether the customer has technical support service.
+StreamingTV,Categorical,Feature,Keep,Indicates whether the customer uses streaming TV service.
+StreamingMovies,Categorical,Feature,Keep,Indicates whether the customer uses streaming movie service.
+Contract,Categorical,Feature,Keep,Contract type can strongly influence customer retention.
+PaperlessBilling,Categorical,Feature,Keep,Billing preference may be associated with customer behavior.
+PaymentMethod,Categorical,Feature,Keep,Payment method may show differences in churn behavior.
+MonthlyCharges,Numerical,Feature,Keep,Monthly spending may be associated with churn.
+TotalCharges,Numerical,Feature,Keep after cleaning,Represents total amount charged and must be converted to numeric and missing values handled.
+Churn,Categorical,Target,Keep as target only,This is the variable we want to predict; it must not be used as an input feature.
